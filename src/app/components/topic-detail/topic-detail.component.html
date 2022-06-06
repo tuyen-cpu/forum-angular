@@ -1,0 +1,27 @@
+<h2 class="mb-5">Topic: CHuyện học phí</h2>
+<p-card>
+    <div class="">06-04-2018, 14:20</div>
+    <div class="grid">
+        <div class="col-1">
+            <div class="text-center">
+                <p-avatar icon="pi pi-user" styleClass="mr-2" size="xlarge" shape="circle"></p-avatar>
+                <span>Uer123</span>
+                <div class="time">Tham gia 02/2/2022</div>
+            </div>
+        </div>
+        <div class="col-11">
+            <h4 class="mb-3">Chuyện hcc phi, Một số thắc mắc trong quyết định tăng học phí</h4>
+            <div class="content mb-4">
+                Từ lớp mẫu giáo đến lớp 12-trường công tại sao lại phải đóng học phi, Từ lớp mẫu giáo đến lớp 12-trường công tại sao lại phải đóng học phi Từ lớp mẫu giáo đến lớp 12-trường công tại sao lại phải đóng học phi
+            </div>
+            <div class="text-right"> <button (click)="showBasicDialog()" pButton pRipple label="Trả lời" icon="pi pi-comment"></button></div>
+
+        </div>
+    </div>
+    <p-dialog header="Trả lời" [(visible)]="displayBasic" [style]="{width: '50vw'}">
+        <textarea class="w-full" rows="5" cols="30" pInputTextarea autoResize="autoResize"></textarea>
+        <ng-template pTemplate="footer">
+            <p-button icon="pi pi-check" (click)="displayBasic=false" label="Gửi" styleClass="p-button-text"></p-button>
+        </ng-template>
+    </p-dialog>
+</p-card>

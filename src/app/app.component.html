@@ -1,0 +1,10 @@
+<div class="flex">
+
+    <div class="col-12">
+        <div class="text-right" *ngIf="user">
+            <span>Chào <b>{{user.userName}}</b></span>|<a class="logout" style="cursor:pointer" (click)="logout()">Đăng xuất</a>
+        </div>
+        <router-outlet>
+        </router-outlet>
+    </div>
+</div>

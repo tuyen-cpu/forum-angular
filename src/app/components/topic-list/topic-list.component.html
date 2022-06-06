@@ -1,0 +1,20 @@
+<div class="">
+    <div class="title">New topic</div>
+    <button class="mb-3" pButton pRipple label="Gửi bài mới" icon="pi pi-plus"></button>
+    <p-table [value]="topics" responsiveLayout="scroll">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Topic</th>
+                <th>Reply</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-topic>
+            <tr>
+                <td>
+                    <app-topic-item></app-topic-item>
+                </td>
+                <td>1</td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>
